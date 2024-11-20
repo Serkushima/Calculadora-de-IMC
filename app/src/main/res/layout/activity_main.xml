@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextPeso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Peso (kg)"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/editTextAltura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Altura (m)"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/buttonCalcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular IMC"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:id="@+id/textViewResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resultado do IMC"
+        android:textSize="18sp"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tabela_imc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Tabela de Classificação do IMC\n\n
+     Faixa de IMC        | Classificação       \n
+     -----------------------------|---------------------\n
+     Abaixo de 18,5     | Abaixo do peso       \n
+     18,5 - 24,9             | Peso normal          \n
+     25 - 29,9                | Sobrepeso            \n
+     30 - 34,9                | Obesidade grau I     \n
+     35 - 39,9                | Obesidade grau II    \n
+     40 ou mais            | Obesidade grau III  "
+    android:textColor="#000000"
+    android:textSize="16sp"
+    android:background="#FFFFFF"
+    android:layout_margin="8dp"
+    android:gravity="start"/>
+
+</LinearLayout>
